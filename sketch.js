@@ -34,7 +34,7 @@ function setup() {
 	
 	dustbin= new Dustbin(1100,470,140,165);
 
-    paper=new Paper();
+    paper=new Paper(100,540,60);
 
 
 
@@ -67,7 +67,7 @@ function keyPressed(){
 	
 	if(keyCode === UP_ARROW){
 
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-80})
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:93,y:-80})
 	}
 }
 
